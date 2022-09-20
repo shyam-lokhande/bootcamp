@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: "Acme"; */
 }
 
 body {
@@ -17,13 +16,12 @@ body {
 }
 
 .box {
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    background-color: #89CFF0;
     padding-bottom: 1%;
     text-align: center;
-    border: 2px solid #0050a5;
-    
+    border: 5px solid #cfe2f7 ;
+    border-radius: 6px;
+    background-color:#aadbec; 
+    color: black; 
 }
 
 #coming-soon {
@@ -50,69 +48,83 @@ a:hover {
     font-size: large;
 }
 
-
-/* .left-logo{  */
-    /* position: absolute; */
-    /* text-align: left; */
-    /* bottom: 60%; */
-
-    /* position: relative; */
-    /* width: auto; */
-
- /* } */
-
 #pvg-logo {
     width: auto;
-    width: 18%;
+    width: 40%;
     border: 2px solid #0050a5;
 }
 
-/* .right-logo { */
-    /* position: absolute; */
-    /* text-align: right; */
-    /* margin-left: 7.5%; */
-    /* bottom: 60%; */
 
-    /* position:relative
-}
-*/
 
 #vlab-logo {
-    margin-top: 8%;
-    /* position: relative; */
-    width: 30%;
+    width: 100%;
     border : black;
     border: 2px solid #0050a5;
-    /* height: 35%; */
-    /* size: 10% 10%; */
-    /* display:inline-flexbox; */
-    /* position: right; */
 } 
 
 
 
 .timeline >h2{
     text-align: center;
-    /* background-color: #89CFF0; */
 }
 
-.details:hover{
-    opacity: 0.9;
-    box-shadow: 1px 1px 5px #312f2f;
-}
+
 
 .details{
     transition: 0.7s;
     margin-left: 2px;
     margin-right: 2px;
-    box-shadow: 0px 0px 3px #d4d2d2;
+    box-shadow: 0px 0px 3px ;
+    
 }
+.details:hover{
+    opacity: 0.9;
+    box-shadow: 1px 1px 5px #312f2f;
+    background-color:#aadbec;
+    color:black;
+
+}
+.prefaceContent{
+    margin: 1% 2%;
+}
+
 
 #timeline {
     position: relative;
     width: 60%;
+    color:black;
 }
 
 #bullets {
     text-align: left;
+}
+table,tr{
+    color: white;
+    
+}
+tr:hover{
+    background-color:#aadbec;
+    font-weight: bolder;
+    color: black;
+}
+
+.card-body{
+    color: black;
+}
+
+@media (max-width:600px){
+    #pvg-logo {
+        width: auto;
+        width: 60%;
+        border: 2px solid #0050a5;
+    }
+    
+    
+    
+    #vlab-logo {
+        width: 100%;
+        border : black;
+        border: 2px solid #0050a5;
+    } 
+    
 }
